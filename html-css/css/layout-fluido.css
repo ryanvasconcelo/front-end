@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.wid-hei {
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgb(255, 168, 61);
+}
+
+/* 100% -  utiliza 100% do espaco livre dentro do container
+   100vw - utiliza 100% do espaco da tela
+   100vh - utiliza 100% do espaco visivel disponivel da tela
+   100dvh - utiliza 100% do espaco visivel da tela
+*/
+
+nav {
+    width: 15%;
+    float: left;
+    background-color: pink;
+    height: 100dvh;
+    display: block;
+}
+
+article {
+    width: 85%;
+    background-color: rgb(209, 160, 255);
+    float: left; /* permite o alinhamento/faz o item flutuar a esquerda */
+    height: 100vh;
+}
+
+/* overflow: hidden - esconde conteudo que ultrapassar o tamanho da tag; scroll - cria um scroll caso o conteudo ultrapasse o tamanho da tag; overlay - permite esconder a barra de rolagem horizontal
+   box-sizing: seta o tipo de box model */

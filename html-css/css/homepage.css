@@ -1,0 +1,137 @@
+/* Folha de estilo padrao das paginas */
+
+
+    /* RESET 
+    Reseta os estilos padroes dos navegadores melhorando o cross-browser e da suporte a
+    tags antigas de versioes anterioes do html e de navegadores
+    os resets mais utilizados sao o de meyer e o html5doctor, esses sao resets de licenca
+    livre e devem ser importados no arquivo html antes de outras folhas de estilo 
+    */
+
+    /* html - seletor raiz 
+       #id - identificador unico (so pode ser usado uma vez no codigo)
+       .class - mesmos estilo, porem elementos diferentes (é reutilizavel)
+       [type="text"] - seletor do tipo atributo
+    */
+
+    /* seletor universal, nao respeita hierarquia*/
+  * {
+    box-sizing: border-box;
+  }
+
+  /* seletor de elemento*/
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+  }
+
+  /* combinadores de tag
+     > aplica as propriedades apena para o filho imediato
+     + aplica as propriedades apenas ao irmao adjacente/que vem a seguir
+     ˜ aplica as propriedades a todos os irmaos que vem a seguir
+     (espaco) combinador descendente/a todos os filhos (geral)
+     pseudo-elemento: tag:hover/visited/active/first-child - cria uma interacao condicional com aquela 
+     tag alterando as propriedades de acordo com a condicao
+     nth-child(posicao a ser alterada/even(pares)/odd(impares))
+  */
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  form div{
+    margin: 20px;
+    padding: 20px 20px 20px 10px;
+    background-color: #fff;
+    border: 1px dashed #bbb;
+    border-bottom: 1px solid #666;
+  }
+
+  label{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  [type="text"], [type="email"], textarea, label {
+    width: 100%;
+  }
+
+  .column {
+    background-color: tomato;
+    float: left;
+    width: 33.3%;
+    columns: 100px 2; /* quando a altura do container ultrapassar 100px ele vai quebrar em duas colunas automaticamente*/
+}
+
+  @media (max-width: 425px) { /* breakpoint, media em pixels que marca o fim das dimensoes do layout de um dispositivo e o comeco das dimensoes de outro, quando a tela tiver no max 425px ele aplicará as regras a seguir, lembre sempre de usar o conceito de herenca no css */
+    nav, article, .column{
+      width: 100%;
+      min-width: 320px;
+    }
+  }
+
+
+  /* MOBILE FIRST: consiste em focar o desenvolvimento primeiro no mobile e depois adaptar para outros tipos de dispositivos, focando na xp do user
+     @media: media query, usado como estrutura condicional dentro do css, usada muito em breakpoints  
+  */
+
+  /*
+  position:
+  static: nao permite trabalhar com position top/bottom/left/right
+  relative: interage com outras tags, fica relativa como referencia, permite trabalhar com position t/r/b/l
+  absolut: nao interage com outras tag no momento de se posicionar, se sobrepoe se referenciando por um elemento pai, quando nao houver, ele se referencia pelo root
+  fixed: se referencia pelo root da pagina e fica fixo e nao interage com a barra de rolagem e nao interage com outros elementos
+  z-index: 0 controla o eixo z, o eixo de sobreposicao sobrepondo um elemento ao outro baseado no numero do z-index
+  overflow: hiden: o que ultrapassar a area do elemento estara oculto
+  !import - flag que diz que aquela regra é importante e deve sobreescrever as outras
+  */
