@@ -20,6 +20,7 @@ informar a alteracao apos testar o codigo alterado e subir no git
 - git commit -m "mensagem do commit"
 - git status
 - git push (envia alteracoes pro repositorio git)
+- git pull (puxa o codigo atualizado do repositorio pra maquina)
 
 ## Markdown
 linguagem muito usada pra escrever documentacao de codigo, entendivel pelo git e traduzivel para html quando renderizada
