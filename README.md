@@ -39,3 +39,9 @@ sao ramificacoes do codigo/versoes de codigos que funcionam em simultaneo
 - EM HIPOTESE alguma se deve commitar um codigo que esta quebrando, mesmo que outro problema tenha sido resolvido
 
 - git fetch --all verifica se nao existe uma versao mais recente na branch master no repositorio, importante fazer isso antes de pushar o codigo pra branch principal
+
+- git merge mescla as branchs do repositorio
+
+- git checkout nomeDaBranch muda de branch
+
+- git push --set-upstream origin nomeDaBranch adiciona a branch criada na maquina ao repositorio git
