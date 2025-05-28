@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Exercícios front end/css/elementos-graficos.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Elementos gráficos</h1>
+
+    <div id="graf-1">
+        <img src="/foto-de-perfil.JPG" alt="">
+    </div>
+
+    <div id="graf-2">
+
+    </div>
+
+    <!-- .SVG É O MELHOR P WEB - VETORIAL - pois se ajusta automaticamente a pagina -->
+
+    <div>=
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillSttyle = "#00FF99"
+        ctx.fillRect(80, 0, 100, 80);
+    </script>
+
+</body>
+</html>

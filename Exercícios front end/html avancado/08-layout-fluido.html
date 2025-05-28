@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Exercícios front end/css/layout-fluido.css">
+</head>
+<body>
+    
+    <h1>Layout responsivo</h1>
+    <section>
+        <h4>Adaptacao de altura e largura de tela</h6>
+        <p>Width - Height : 100%/100dvh/100vw/100vh</p>
+
+        <div class="wid-hei">
+
+            <nav>lista de navegacao</nav>
+
+            <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam velit reprehenderit minus nostrum molestias voluptatum numquam alias natus itaque. Voluptatum laboriosam amet voluptas saepe accusantium, consectetur quam reprehenderit obcaecati?
+            </article>
+
+        </div>
+
+        <div>
+
+            <picture>
+                
+                <!-- .SVG É O MELHOR P WEB - VETORIAL -->
+                <source media="(max-width: 480px)" srcset="fonte"> <!-- essa img sera carregada em telas de ate 480px -->
+                <source media="(max-width: 800px)" srcset="fonte"> <!-- essa img sera carregada em telas de ate 800px -->
+                <img src="fonte" alt=""> <!-- essa img sera carregada em telas a partir de 801px-->
+
+            </picture>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

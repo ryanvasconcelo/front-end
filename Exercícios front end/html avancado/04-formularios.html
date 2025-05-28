@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulário de contato</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/Exercícios front end/css/homepage.css">	
+	</head>
+	<body>
+		<header>
+			<h2>Formulário de contato</h>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Início</a></li>
+					<li><a href="#sobre">Sobre nós</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>
+				Formulário de contato
+				</h1>
+				<p>Preencha os campos abaixo</p>
+				<form method="post">	
+					<div>
+						<label for="nome">Nome:</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+					<div>
+						<label for="email">E-mail:</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+					</div><br>
+					<div>
+						<label for="mensagem">Mensagem:</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+					</div><br>
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<input type="radio" name="cor" value="cor" id="vermelho">
+						<label for="vermelho">Vermelho</label>
+						<input type="radio" name="cor" value="cor" id="azul">
+						<label for="azul">Azul</label>
+						<input type="radio" name="cor" value="cor" id="preto">
+						<label for="preto">Preto</label>
+					</div><br>
+					<div>
+						<label>Quais seus hobbies?</label>
+						<input type="checkbox" name="hobbie" value="hobbie" id="jogar">
+						<label for="jogar">Jogar</label>
+						<input type="checkbox" name="hobbie" value="hobbie" id="programar">
+						<label for="programar">Programar</label>
+						<input type="checkbox" name="hobbie" value="hobbie" id="namorar">
+						<label for="namorar">Sair</label>
+					</div><br>
+					<div>
+						<label>Qual seu pet?</label>
+						<select>
+							<option value="pet" selected>Cachorro</option>
+							<option value="pet">Gato</option>
+							<option value="pet">Hamster</option>
+						</select>
+					</div><br>
+					<div>
+						<input type="submit">
+					</div>
+				</form>
+
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Ryan Vasconcelos</p>
+		</footer>
+	</body>
+</html>

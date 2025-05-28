@@ -1,0 +1,114 @@
+/* RESET 
+    Reseta os estilos padroes dos navegadores melhorando o cross-browser e da suporte a
+    tags antigas de versioes anterioes do html e de navegadores
+    os resets mais utilizados sao o de meyer e o html5doctor, esses sao resets de licenca
+    livre e devem ser importados no arquivo html antes de outras folhas de estilo 
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    /* 
+       font-family (familia), font-size (tamanho), font-weight (grossura),
+       letter-spacing (espacamento entre letras), line-height (espacamento entre linhas)
+       atributo de forma resumida font: style size/line-height family weight
+       devemos ter a certeza que o user tem a fonte utilizada na maquina dele 
+       ao definir uma familia "serif", "sans-serif" o navegador escolherar uma fonte
+       que o user tenha na maquina dele
+       Se for usada uma fonte especifica e o user nao tiver instalada, o navegador
+       exibira outra qualquer
+       Embed: para ter maior controle da fonte usada no projeto, é possível usar
+       uma fonte embed (incorporada) no servidor do projeto e chamada no css
+       é possivel fazer esse embed atraves do google fonts tbm colocando a tag de link
+       no html e atribuindo a fonte dentro do css
+    */
+}
+
+header {
+    background-color: #666;
+    text-align: center;
+    padding: 2.3rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+section {
+    display: table;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color: #b6b6b6;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+article {
+    float: left;
+    background-color: #eee;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+#profile-img {
+    background-color: #eee;
+    padding: 10px;
+    width: 100%;
+    height: 16rem;
+}
+
+div p {
+    background-color: #eee;
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h4 {
+    text-align: center;
+}
+
+article div img {
+    margin: 0.3rem 2rem 1rem 2rem;
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+}
+
+.project-container {
+    margin: 2rem 3.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proj-box {
+    width: 20rem;
+    height: 20rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    background-color: #666;
+    padding: 1.6rem;
+    color: #eee;
+}
